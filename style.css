@@ -36,17 +36,20 @@
 }
 
 .board.x .cell:not(.x):not(.o):hover::before,
-.board.x .cell:not(.x):not(.o):hover::after,
+.board.x .cell:not(.x):not(.o):hover::after {
+  background-color: rgba(255, 255, 255, 0.3) !important;
+}
+
 .board.o .cell:not(.x):not(.o):hover::before,
 .board.o .cell:not(.x):not(.o):hover::after {
-  background-color: rgba(255, 255, 255, 0.3) !important;
+  outline-color: rgba(255, 255, 255, 0.3) !important;
 }
 
 
 /* Célula */
 .cell {
-  width: 5em;
-  height: 5em;
+  width: 8em;
+  height: 8em;
   border: 2px solid white;
   display: flex;
   justify-content: center;
@@ -91,10 +94,11 @@
 .board.x .cell:not(.x):not(.o):hover::before,
 .board.x .cell:not(.x):not(.o):hover::after {
   content: "";
-  height: calc(5em * 0.15);
-  width: calc(5em * 0.9);
+  height: calc(8em * 0.15);
+  width: calc(8em * 0.9);
   background: white;
   position: absolute;
+  border-radius: 50px;
 }
 
 .cell.x::before,
@@ -113,10 +117,12 @@
 .board.o .cell:not(.x):not(.o):hover::before,
 .board.o .cell:not(.x):not(.o):hover::after {
   content: "";
-  height: calc(5em * 0.9);
-  width: calc(5em * 0.9);
-  background: white;
+  height: calc(8em * 0.9);
+  width: calc(8em * 0.9);
   position: absolute;
+  background: none;
+  outline: 15px solid white;
+  outline-offset: -20px;
   border-radius: 50%;
 }
 
