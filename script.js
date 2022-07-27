@@ -8,6 +8,25 @@ const winningMessage = document.querySelector("[data-winning-message]");
 const restartBtn = document.querySelector("[data-restart-btn]");
 const turnText = document.querySelector("[data-turn-text]");
 
+const aboutBtn = document.querySelector("[data-about-btn]");
+const about = document.querySelector("[data-about]");
+
+const aboutHover = () => {
+  aboutBtn.innerHTML = `<i class="fa-solid fa-question"></i> Sobre`;
+}
+
+const aboutBack = () => {
+  aboutBtn.innerHTML = `<i class="fa-solid fa-question"></i>`;
+}
+
+const aboutClick = () => {
+  about.classList.add('show');
+}
+
+const aboutClose = () => {
+  about.classList.remove('show');
+}
+
 // Variável para troca de turno
 let isCircleTurn;
 

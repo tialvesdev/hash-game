@@ -4,19 +4,48 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="shortcut icon" href="./img/jogoDaVelha.icon.png" type="image/x-icon">
+    <link
+      rel="shortcut icon"
+      href="./img/jogoDaVelha.icon.png"
+      type="image/x-icon"
+    />
     <title>Jogo da velha</title>
 
     <link rel="stylesheet" href="./style.css" />
     <script src="./script.js" defer></script>
+
+    <script
+      src="https://kit.fontawesome.com/d08d66d5b5.js"
+      crossorigin="anonymous"
+    ></script>
   </head>
 
   <body>
     <div class="content">
-
       <div class="content-text">
-        <h2><img class="content-img" src="./img/jogoDaVelha.icon.png" alt="Jogo da Velha"> Jogo da Velha <img class="content-img" src="./img/jogoDaVelha.icon.png" alt="Jogo da Velha"></h2>
+        <h2>
+          <img
+            class="content-img"
+            src="./img/jogoDaVelha.icon.png"
+            alt="Jogo da Velha"
+          />
+          Jogo da Velha
+          <img
+            class="content-img"
+            src="./img/jogoDaVelha.icon.png"
+            alt="Jogo da Velha"
+          />
+        </h2>
         <h3 data-turn-text>Turno do X!</h3>
+        <button
+          class="about-btn"
+          onmouseover="aboutHover()"
+          onmouseout="aboutBack()"
+          onclick="aboutClick()"
+          data-about-btn
+        >
+          <i class="fa-solid fa-question"></i>
+        </button>
       </div>
 
       <div class="board" data-board>
@@ -35,6 +64,41 @@
     <div class="winning-message" data-winning-message>
       <p class="winning-message-text" data-winning-message-text>X venceu!</p>
       <button class="winning-message-btn" data-restart-btn>Reiniciar</button>
+    </div>
+
+    <div class="about" data-about>
+      <div class="about-content">
+        <h3 class="about-title">O que é o Jogo da Velha?</h3>
+
+        <div class="about-section">
+          <div>
+          <p class="about-text">
+            O jogo da velha é um passatempo popular com origens portuguesas e
+            popular até hoje no Brasil. Suas regras são:
+          </p>
+          
+            <ul class="about-rules">
+              <li>Cada jogador escolhe ser um símbolo (X ou O);</li>
+              <li>
+                O jogador X começa, escolhendo uma das 9 opções para colocar sua
+                marca;
+              </li>
+              <li>
+                Ganha o símbolo que conseguir criar uma linha, seja ela vertical,
+                horizontal ou diagonal.
+              </li>
+            </ul>
+          </div>
+          
+          <img
+            class="about-img"
+            src="./img/IMAGEM_1324_-_JOGO-DA-VELHA_-_O_BLOG_DO_MESTRE-removebg-preview.png"
+            alt="Jogo Da Velha"
+          />
+        </div>
+
+        <button class="about-close" onclick="aboutClose()">Fechar</button>
+      </div>
     </div>
   </body>
 </html>
