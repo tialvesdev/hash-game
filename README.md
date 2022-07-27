@@ -1,4 +1,4 @@
 <h1 align="center"> 🧓 Jogo da Velha 🧓 </h1>
 
-### Sobre o Projeto✨: 
-Este é um projeto que se trata de uma brincadeira comum, o Jogo da Velha. Feito com HTML, CSS e JS, usando coisas como display grid e flex, :nth-child, verificações em JS e troca dinâmica de texto.
+## O que é esse projeto:
+Este projeto é baseado no popular passatempo Jogo da Velha, comummente jogado no Brasil, sendo um projeto para realizar toda a sua lógica usando as tecnologias HTML, CSS e JS, também sendo um treino para funções de cada uma das tecnologias como as pseudo-classes :nth-child() e :not(), os displays flex e grid e o @media no CSS e querySelector(), arrow functions, parameters e condições dinâmicas no JS.
