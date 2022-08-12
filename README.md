@@ -11,6 +11,7 @@ Um projeto usando HTML, CSS e JS para representação do famoso jogo de infânci
 - Data-query
 - Troca de texto dinâmica
 - Arrow functions ans Callbacks
+- Responsividade total
 
 <br>
 
