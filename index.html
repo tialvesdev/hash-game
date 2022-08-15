@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Icon & Title -->
     <link
       rel="shortcut icon"
       href="./img/jogoDaVelha.icon.png"
@@ -11,9 +12,11 @@
     />
     <title>Jogo da velha</title>
 
+    <!-- Style and Script -->
     <link rel="stylesheet" href="./style.css" />
     <script src="./script.js" defer></script>
 
+    <!-- FontAwesome script for icons -->
     <script
       src="https://kit.fontawesome.com/d08d66d5b5.js"
       crossorigin="anonymous"
@@ -22,6 +25,7 @@
 
   <body>
     <div class="content">
+      <!-- Title -->
       <div class="content-text">
         <h2>
           <img
@@ -37,6 +41,8 @@
           />
         </h2>
         <h3 data-turn-text>Turno do X!</h3>
+
+        <!-- Button Sobre -->
         <button
           class="about-btn"
           onmouseover="aboutHover()"
@@ -48,6 +54,7 @@
         </button>
       </div>
 
+      <!-- Jogo -->
       <div class="board" data-board>
         <div class="cell" data-cell></div>
         <div class="cell" data-cell></div>
@@ -61,11 +68,13 @@
       </div>
     </div>
 
+    <!-- Winning Message -->
     <div class="winning-message" data-winning-message>
       <p class="winning-message-text" data-winning-message-text>X venceu!</p>
       <button class="winning-message-btn" data-restart-btn>Reiniciar</button>
     </div>
 
+    <!-- Sobre -->
     <div class="about" data-about>
       <div class="about-content">
         <h3 class="about-title">O que é o Jogo da Velha?</h3>

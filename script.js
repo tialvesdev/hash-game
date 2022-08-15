@@ -11,18 +11,22 @@ const turnText = document.querySelector("[data-turn-text]");
 const aboutBtn = document.querySelector("[data-about-btn]");
 const about = document.querySelector("[data-about]");
 
+// MouseOver do botão sobre
 const aboutHover = () => {
   aboutBtn.innerHTML = `<i class="fa-solid fa-question"></i> Sobre`;
 }
 
+// MouseOut do botão sobre
 const aboutBack = () => {
   aboutBtn.innerHTML = `<i class="fa-solid fa-question"></i>`;
 }
 
+// Click do sobre
 const aboutClick = () => {
   about.classList.add('show');
 }
 
+// Fechar Sobre
 const aboutClose = () => {
   about.classList.remove('show');
 }
